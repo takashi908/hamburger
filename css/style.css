@@ -27,7 +27,7 @@ li {
 
 .l-header {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: #fff7ef;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,19 +65,61 @@ li {
   border: solid 1px #707070;
   color: #707070;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 .l-sidebar {
   width: 20%;
   height: auto;
-  font-family: "Roboto", sans-serif;
   background-color: #f2ede9;
   padding-left: 25px;
-  padding-top: 40px;
+  padding-top: 45px;
   color: #707070;
 }
-.l-sidebar .l-sidebar_title {
-  font-size: 1.5rem;
+.l-sidebar_title {
+  font-size: 20px;
   font-weight: bold;
+  padding-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.l-sidebar_menu {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.l-sidebar_menu a {
+  color: #707070;
+}
+.l-sidebar_submenu {
+  margin-left: 15px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.l-sidebar_submenu li {
+  padding-bottom: 12px;
+  font-size: 11px;
+}
+.l-sidebar_submenu a {
+  color: #707070;
+}
+
+.l-main_visual {
+  position: relative;
+  margin-bottom: 64px;
+}
+.l-main_visual img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-main_visual h2 {
+  position: absolute;
+  top: 50%;
+  margin-left: 40px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
