@@ -7,37 +7,47 @@
     <meta name="description" content="ハンバーガーサイト"/>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/main.js"></script>
   </head>
 
   <body class="home">
     <div class="l-contents">
-      <article class="l-main_wrapper">
+      <article class="l-contents__left">
        <header class="l-header">
-       <div class="l-header_logo">
+        <div class="c-buttan">
+          <p>Menu</p>
+        </div>  
+       <div class="l-header__bottom">  
+       <div class="l-header__bottom__logo">
         <a href="#">
         <h1>Hamburger</h1>
         </a>
        </div>
-       <form class="l-header_form">
-        <input class="l-header_form_box" type="search">
-        <input class="l-header_form_btn" type="submit" value="検索">
+       <form class="l-header__bottom__form p-search__form">
+        <div class="p-search__form__box">
+        <input class="p-search__form__text" type="search">
+        </div>
+        <input class="p-search__form__button" type="submit" value="検索">
        </form>
+       </div>
        </header>
+
        <main>
         <div class="l-main">
-         <div class="l-main_visual">
+         <div class="l-main__visual">
            <img src="img/front-mainvisual.png" alt="">
            <h2>ダミーサイト</h2>
          </div>
-         <div class="l-main_coloumn">
-           <div class="l-main_coloumn_left">
+         <div class="p-main__branchmenu">
+           <div class="p-main__branchmenu__takeout">
              <a href="#">
              <img src="img/takeout.png" alt="takeout">
-             <h2 class="l-main_coloumn_left_title">
+             <h2 class="p-main__branchmenu__title">
                Take Out
              </h2>
-             <div class="l-main_coloumn_wrapper">
+             <div class="p-main__branchmenu__box">
                <dl>
                  <dt>Take OUT</dt>
                  <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
@@ -49,13 +59,13 @@
              </div>
              </a>
            </div>
-           <div class="l-main_coloumn_right">
+           <div class="p-main__branchmenu__eatin">
              <a href="#">
             <img src="img/eatin.png" alt="eatin">
-            <h2 class="l-main_coloumn_left_title">
+            <h2 class="p-main__branchmenu__title">
               Eat In
             </h2>
-            <div class="l-main_coloumn_wrapper">
+            <div class="p-main__branchmenu__box">
               <dl>
                 <dt>Take OUT</dt>
                 <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
@@ -68,9 +78,9 @@
              </a>
           </div>
          </div>
-         <div class="l-main_map">
-           <div class="l-main_map_container">
-           <h2 class="l-main_map_container_title">
+         <div class="p-main__map">
+           <div class="p-main__map__container">
+           <h2 class="p-main__map__container__title">
              見出しが入ります
            </h2>
            <p class="l-main_map_container_text">
@@ -85,50 +95,54 @@
         </div>
        </main>
       </article>
-      
+
+      <article class="l-contents__right">
       <div class="l-sidebar">
-         <h2 class="l-sidebar_title">Menu</h2>
+         <p class="l-sidebar_title">Menu</p>
          <ul class="l-sidebar_menu"> 
            <li><a href="#">バーガー</a></li>
-         </ul>
-         <ul class="l-sidebar_submenu">
-           <li><a href="#">ハンバーガー</a></li>
-           <li><a href="#">チーズバーガー</a></li>
-           <li><a href="#">テリヤキバーガー</a></li>
-           <li><a href="#">アボカドバーガー</a></li>
-           <li><a href="#">フィッシュバーガー</a></li>
-           <li><a href="#">ベーコンバーガー</a></li>
-           <li><a href="#">チキンバーガー</a></li>
+           <ul class="l-sidebar_submenu">
+            <li><a href="#">ハンバーガー</a></li>
+            <li><a href="#">チーズバーガー</a></li>
+            <li><a href="#">テリヤキバーガー</a></li>
+            <li><a href="#">アボカドバーガー</a></li>
+            <li><a href="#">フィッシュバーガー</a></li>
+            <li><a href="#">ベーコンバーガー</a></li>
+            <li><a href="#">チキンバーガー</a></li>
+           </ul>
          </ul>
          <ul class="l-sidebar_menu"> 
           <li><a href="#">サイド</a></li>
-        </ul>
-        <ul class="l-sidebar_submenu">
-          <li><a href="#">ポテト</a></li>
-          <li><a href="#">サラダ</a></li>
-          <li><a href="#">ナゲット</a></li>
-          <li><a href="#">コーン</a></li>
-        </ul>
+          <ul class="l-sidebar_submenu">
+            <li><a href="#">ポテト</a></li>
+            <li><a href="#">サラダ</a></li>
+            <li><a href="#">ナゲット</a></li>
+            <li><a href="#">コーン</a></li>
+          </ul>
+         </ul>
         <ul class="l-sidebar_menu"> 
           <li><a href="#">ドリンク</a></li>
+          <ul class="l-sidebar_submenu">
+            <li><a href="#">コーラ</a></li>
+            <li><a href="#">ファンタ</a></li>
+            <li><a href="#">オレンジ</a></li>
+            <li><a href="#">アップル</a></li>
+            <li><a href="#">紅茶（Ice/Hot）</a></li>
+            <li><a href="#">コーヒー（Ice/Hot）</a></li>
+          </ul>
         </ul>
-        <ul class="l-sidebar_submenu">
-          <li><a href="#">コーラ</a></li>
-          <li><a href="#">ファンタ</a></li>
-          <li><a href="#">オレンジ</a></li>
-          <li><a href="#">アップル</a></li>
-          <li><a href="#">紅茶（Ice/Hot）</a></li>
-          <li><a href="#">コーヒー（Ice/Hot）</a></li>
-        </ul>
+        <div class="c-button__close">
+        </div>
        </div>
+      </article>
   </div>
 
   <footer class="l-footer">
-    <div class="l-footer_link">
+    <div class="l-footer__link">
       <p><a href="#">ショップ情報</a></p>
       <p><a href="#">ヒストリー</a></p>
     </div>
-    <p class="l-footer_copy">
+    <p class="l-footer__copy">
       &copy; RaiseTech
     </p>
   </footer>
