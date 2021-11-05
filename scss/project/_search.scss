@@ -1,0 +1,39 @@
+@use "../global/" as g;
+
+.p-search__form{
+  &__box{
+    display: inline-block;
+    position: relative;
+      &::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+    }
+    &__text{
+      width: 210px;
+      height: 25px;
+      border: solid 1px g.$gray;
+      border-radius: 0.6rem;
+      background-color: g.$withe;
+      padding-left: 25px;   
+      }
+    &__button{
+      width: 71px;
+      height: 25px;
+      background-color: g.$ofwithe;
+      border-radius: 0.6rem;
+      border: solid 1px g.$gray;
+      color: g.$gray;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+} 

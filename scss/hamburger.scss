@@ -1,18 +1,8 @@
 @charset "UTF-8";
-//============================
-//foundation
-//============================
-@forward "./foundation/reset";
-@forward "./foundation/base";
-@forward "./foundation/mixin";
-//============================
-//layout
-//============================
-@forward "./layout/header";
-@forward "./layout/main";
-@forward "./layout/footer";
-@forward "./layout/sidebar";
-//============================
-//object
 
+@use "foundation";
+@use "layout";
+@use "component";
+@use "project";
+@use "utility";
 

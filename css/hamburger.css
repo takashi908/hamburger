@@ -337,4 +337,56 @@ img {
 li {
   list-style: none;
 }
+
+.l-header {
+  height: 110px;
+  background-color: #FFF7EF;
+  position: relative;
+}
+.l-header__bottom {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+}
+.l-header__bottom h1 {
+  color: #707070;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.p-search__form__box {
+  display: inline-block;
+  position: relative;
+}
+.p-search__form__box::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.p-search__form__text {
+  width: 210px;
+  height: 25px;
+  border: solid 1px #707070;
+  border-radius: 0.6rem;
+  background-color: #ffffff;
+  padding-left: 25px;
+}
+.p-search__form__button {
+  width: 71px;
+  height: 25px;
+  background-color: #f2ede9;
+  border-radius: 0.6rem;
+  border: solid 1px #707070;
+  color: #707070;
+  cursor: pointer;
+  margin-left: 5px;
+}
 /*# sourceMappingURL=hamburger.css.map */

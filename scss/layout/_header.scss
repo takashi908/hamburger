@@ -1,0 +1,17 @@
+@use "../global/" as g;
+
+.l-header{
+  height: 110px;
+  background-color: g.$skin;
+  position: relative;
+  &__bottom{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    h1{
+      color: g.$gray;
+      font-size: 3rem;
+      font-family: g.$robo;
+    }
+  }
+}
